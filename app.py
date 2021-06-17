@@ -4,8 +4,9 @@ app = app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    uranai =random.choice(['大吉','中吉','小吉'])
-    return render_template('index.html',fortune=uranai)
+    uranai = random.choice(['大吉','中吉','小吉'])
+    uranai = random.choice(unsei_list)
+    return render_template('index.html',fortune=uranai,fortune_list=unsei_list)
 		
 if __name__ == "__main__":
     app.run(debug=True)
