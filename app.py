@@ -18,4 +18,4 @@ def fortune():
          {"day":"明日","fortune": random.choice(unsei_list)},
          {"day":"明後日","fortune": random.choice(unsei_list)},
     ]
-return render_template('fortune.html',fortune_list=uranai_list)
+    return render_template('fortune.html',fortune_list=uranai_list)
