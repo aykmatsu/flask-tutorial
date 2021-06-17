@@ -20,6 +20,12 @@
             {% endfor %}
         </tbody>
     </table>
+    {% if comment %}
+    <p>今日の占いに対するコメントは?<br>
+        {{comment}}
+    </p>
+    {% endif %}
+    
     <form method ="POST" action="/fortune">
          <label for="commentInput">今日の占いに対するコメントを入力</label>
          <input id ="commentInput"name="comment">
