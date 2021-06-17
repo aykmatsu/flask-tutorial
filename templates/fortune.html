@@ -20,5 +20,20 @@
             {% endfor %}
         </tbody>
     </table>
+    <form method ="POST" action="/fortune">
+         <label for="commentInput">今日の占いに対するコメントを入力</label>
+         <input id ="commentInput"name="comment">
+
+         <p>表示したい日<br>
+             <select name="num_of_days">
+                 <option value="1">1日分</option>
+                 <option value="2">2日分</option>
+                 <option value="3"selected>3日分</option>
+                 <option value="4">4日分</option>
+                 <option value="5">5日分</option>
+             </select></p>
+         <input type="submit" value="送信!">
+    </form>
+        　
 </body>
 </html>
